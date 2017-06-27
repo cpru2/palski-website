@@ -1,0 +1,20 @@
+{
+  "name": "palskiapp",
+  "version": "1.0.0",
+  "description": "Website for aerospace firm",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cpru2/palski-website.git"
+  },
+  "author": "Courtney Pruitt",
+  "license": "ISC",
+  "homepage": "https://github.com/cpru2/palski-website",
+  "dependencies": {
+    "body-parser": "^1.172",
+    "express": "^4.15.3",
+    "nodemailer": "^4.0.1",
+    "pug": "^2.0.0-rc.2",
+    "tachyons": "^4.7.4"
+  }
+}
