@@ -1,11 +1,46 @@
+/*Slideshow*/
+
+.swiper-container {
+    background-size: cover;
+    width: 100%;
+    background-color: #FFFFFF;
+    margin-top: 0 auto;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*Responsive images*/
+
+@media screen and (min-width: 30em) {
+
+
+  }
+
+@media screen and (min-width: 30em) and (max-width: 60em) {
+
+
+}
+
+@media screen and (min-width: 60em) and (max-width: 86em) {
+
+}
+
+@media screen and (min-width: 86em) {
+
+  }
+}
+
 
 /*Hamburger*/
 
-@media screen and (min-width: 60em) {
-  .f-4-l, .f-subheadline { font-size: 3.25rem; }
-}
 
-@media screen and (min-width: 86em) and (max-width: 120em)  {
+@media screen and (min-width: 86em) {
+  .f4-xl { font-size: 1.25rem; }
+  .f1-xl { font-size: 3rem; }
 }
 
 

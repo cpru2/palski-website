@@ -1,11 +1,23 @@
 include boilerplate.pug
-div
-  h1
-    | Careers
-    h4
+.swiper-container
+  .swiper-wrapper
+    .swiper-slide.image.is-2by1
+      img(src='/static/assets/placeholderbackground.jpg')
+    .swiper-slide.image.is-2by1
+      img(src='/static/assets/placeholderbackground.jpg')
+    .swiper-slide.image.is-2by1
+      img(src='/static/assets/placeholderbackground.jpg')
+    .swiper-slide.image.is-2by1
+      img(src='/static/assets/placeholderbackground.jpg')
+  .swiper-button-prev
+  .swiper-button-next
+div.has-text-centered.pt2
+  div.tracked-ns
+    h1.f3.f2-ns.f1-xl.fw2.lato.lh-title Careers
+    h4.measure.center.lh-copy.f5.f4-ns.f3-xl.fw1.roboto
       | We look for skilled engineers who are excited to solve technical problems
       | and develop leadership skills.
-div
+  div.pt4
   h3 Open positions
   ul
     li
@@ -26,33 +38,31 @@ div
       li Location
       li Contingent
       li Full time
-div
-  h3 Our team
-  ul
-    li
-      h5
-        | Mike Palski
-        img(src='')
-      p bio
-    li
-      h5
-        | Kathryn Palski
-        img(src='')
-      p bio
-    li
-      h5
-        | Andrew Palski
-        img(src='')
-      p bio
-    li
-      h5
-        | David Kalian
-        img(src='')
-      p bio
-    li
-      h5
-        | Alex Lambert
-        img(src='')
-      p bio
 
+  div.columns.has-text-centered
+  div.column
+    h5
+      | Mike Palski
+      img(src='')
+    p bio
+  div.column
+    h5
+      | Kathryn Palski
+      img(src='')
+    p bio
+  div.column
+    h5
+      | Andrew Palski
+      img(src='')
+    p bio
+  div.column
+    h5
+      | David Kalian
+      img(src='')
+    p bio
+  div.column
+    h5
+      | Alex Lambert
+      img(src='')
+    p bio
 include footer.pug

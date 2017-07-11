@@ -12,6 +12,7 @@
   "homepage": "https://github.com/cpru2/palski-website",
   "dependencies": {
     "body-parser": "^1.172",
+    "browser-sync": "^2.18.12",
     "express": "^4.15.3",
     "nodemailer": "^4.0.1",
     "pug": "^2.0.0-rc.2",
