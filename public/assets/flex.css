@@ -19,7 +19,7 @@
 
 h1, h2, h3, h4, h5, h6, p {
   color: #FFFFFF;
-  opacity: 0.85;
+  opacity: 0.8;
   max-width: 30em;
 }
 
@@ -67,6 +67,10 @@ button {
   text-transform: uppercase;
 }
 
+i {
+  font-size: 5em;
+}
+
 /*Layout */
 
   /* Hero */
@@ -105,6 +109,7 @@ button {
   padding: 3vw;
   margin-bottom: 1rem;
   align-self: center;
+  text-align: left;
 }
 
 .grid-item:last-child {
@@ -154,7 +159,7 @@ button {
 
 }
 
-@media screen and (max-width: 60em) {
+@media screen and (max-width: 61.9375em) {
 
   /*Layout */
 
@@ -165,7 +170,7 @@ button {
 
 }
 
-@media screen and (min-width: 60em) and (max-width: 86em) {
+@media screen and (min-width: 61.9375em) and (max-width: 86em) {
 
 
   /*Layout */
@@ -174,6 +179,7 @@ button {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
+    width: 90vw;
   }
 
 }
