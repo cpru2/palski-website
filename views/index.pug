@@ -1,141 +1,126 @@
 include boilerplate.pug
-.hero
-  .hero-body
-    .hero-item
+#hero
+  #hero-body
+    #hero-item
       h1 Satellite Systems Engineering
-    .hero-item
+    #hero-item.mb2
       p Aerospace engineering firm focused on growing the next generation of engineering and management leaders.
-    .hero-item
-    a(href='careers')
-      button.btn-cta See open positions
-.main
-  .container
-    h4.mb4.mt4 Why Palski?
-    .grid
-      .grid-item
-        i.icon-cubes
-        h3.mt2 Technical expertise
-        p
-          | We specialize in satellite systems engineering, integration, and test.
-      .grid-item
-        i.icon-handshake-o
-        h3.mt2 Agile leadership
-        p
-          | Our engineers are not bogged down by process or policy. They are
-          | skilled problem solvers, excellent communicators, and budding leaders.
-      .grid-item
-        i.icon-rocket
-        h3.mt2 Mission success
-        p
-          | We work closely with customers to ensure mission success,
-          | modeling complex systems to architect, predict, and verify performance.
-    h4.mb4.tc Some things we can talk about:
-    .grid-container#about
-      .grid
-        .grid-item
-          small.fw6 2007ish
-        .grid-item
+    #hero-item
+      a(href='careers')
+        button.btn-cta See open positions
+#main
+  #container
+    #services
+      #header
+        h4#item Why Palski?
+      #service-grid
+        #service
+          i.icon-cubes#icon
+          h3.mt2 Technical expertise
           p
-            | Extraordinary aerospace engineers
-            | complete a successful mission and gift their team leader
-            | a polo with an embroidered logo
-            | that read: Palski & Associates. It was supposed to be a joke...
-        .grid-item
-          small.fw6 April 2014
-        .grid-item
+            | We specialize in satellite systems engineering, integration, and test.
+        #service
+          i.icon-handshake-o#icon
+          h3.mt2 Agile leadership
           p
-            | Seven years later, we launched Palski & Associates in Los Angeles,
-            | in the spirit of those extraordinary engineers. They thought it was
-            span.i hilarious.
-        .grid-item
-          small.fw6 December 2014
-        .grid-item
-          p Won first contract from CEB Metasystems
-      .grid
-        .grid-item
-          small.fw6 April 2016
-        .grid-item
-          p Launched summer internship program with USC
-      .grid
-        .grid-item
-          small.fw6 February 2017
-        .grid-item
-          p Awarded DARPA contract
-      .grid
-        .grid-item
-          small.fw6 April 2017
-        .grid-item
-          p New location in Colorado!
-
-    h4.mb4.tc Some things we can't talk about.
-    h4.mb4 What people say:
-    .grid-container
-      .grid
-        .grid-item.mb0.pb0
-          img(src='/static/assets/img/boeing-logo.png' class='logo')
-        .grid-item.flex-3.pt0
-          h3.mb3.mt2 "When I want something done right I ask for a Palski."
+            | Our engineers are not bogged down by process or policy. They are
+            | skilled problem solvers, excellent communicators, and budding leaders.
+        #service
+          i.icon-rocket#icon
+          h3.mt2 Mission success
+          p
+            | We work closely with customers to ensure mission success,
+            | modeling complex systems to architect, predict, and verify performance.
+    #milestones
+      #manifest
+        h4#header Manifest
+        #milestone-grid.mt4
+          #date
+            small.fw6 April 2014
+          #milestone
+            p
+              | We launched!
+        #milestone-grid
+          #date
+            small.fw6 December 2014
+          #milestone
+            p Won first contract from CEB Metasystems
+        #milestone-grid
+          #date
+            small.fw6 April 2016
+          #milestone
+            p Launched summer internship program with USC
+        #milestone-grid
+          #date
+            small.fw6 February 2017
+          #milestone
+            p Awarded DARPA contract
+        #milestone-grid
+          #date
+            small.fw6 April 2017
+          #milestone
+            p New location in Colorado!
+    #testimonials
+      #header
+        h4#item What people say:
+      #testimonial-grid
+        #logo
+          img(src='/static/assets/img/boeing-logo.png')
+        #testimonial
+          h3#blockquote "When I want something done right I ask for a Palski."
           small
             span.fw6 Archie Bunker
             span Space Control Engineer at Boeing
-      .grid
-        .grid-item.mb0.pb0
-          img(src='/static/assets/img/boeing-logo.png' class='logo')
-        .grid-item.flex-3.pt0
-          h3.mb3.mt2 "The Palski's are the best. We love going sailing with them."
+      #testimonial-grid
+        #logo
+          img(src='/static/assets/img/boeing-logo.png')
+        #testimonial
+          h3#blockquote "The Palski's are the best. We love going sailing with them."
           small
             span.fw6 Harry Hart
             span Lieutenant Colonel at Boeing
-      .grid
-        .grid-item.mb0.pb0
-          img(src='/static/assets/img/boeing-logo.png' class='logo')
-        .grid-item.flex-3.pt0
-          h3.mb3.mt2 "I do planes. The Palski's do satellites."
+      #testimonial-grid
+        #logo
+          img(src='/static/assets/img/boeing-logo.png')
+        #testimonial
+          h3#blockquote "I do planes. The Palski's do satellites."
           small
             span.fw6 Amelia Earheart
             span First female pilot at Boeing
-      .grid
-        .grid-item.mb0.pb0
-          img(src='/static/assets/img/boeing-logo.png' class='logo')
-        .grid-item.flex-3.pt0
-          h3.mb3 "I do planes. The Palski's do satellites."
-          small
-            span.fw6 Amelia Earheart
-            span First female pilot at Boeing
+    #team
+      #header
+        h4#item All we want is missions that succeed, and cost less.
+      #description
+        p#item
+          | We are a small team of engineers who like to solve complex problems.
+      #team-grid
+        #member
+          .aspect-ratio--1x1
+            img(src='/static/assets/img/person-placeholder.png')
+          p.fw4 Mike Palski
+          p bio
+        #member
+          .aspect-ratio--1x1
+            img(src='/static/assets/img/person-placeholder.png')
+          p.fw4 Kathryn Palski
+          p bio
+        #member
+          .aspect-ratio--1x1
+            img(src='/static/assets/img/person-placeholder.png')
+          p.fw4 Andrew Palski
+          p bio
+        #member
+          .aspect-ratio--1x1
+            img(src='/static/assets/img/person-placeholder.png')
+          p.fw4 David Kalian
+          p bio
+        #member
+          .aspect-ratio--1x1
+            img(src='/static/assets/img/person-placeholder.png')
+          p.fw4 Alex Lambert
+          p bio
+    #joinus
+      a(href='careers')
+        button.btn-cta See open positions
 
-
-  h4.mt4.mb3.tc All we want is missions that succeed, and cost less.
-  p
-    | We are a small team of engineers who like to solve complex problems.
-  .grid
-    .grid-item
-      h5
-        img(src='')
-        | Mike Palski
-        p bio
-    .grid-item
-      h5
-        img(src='')
-        | Kathryn Palski
-        p bio
-    .grid-item
-      h5
-        img(src='')
-        | Andrew Palski
-        p bio
-    .grid-item
-      h5
-        img(src='')
-        | David Kalian
-        p bio
-    .grid-item
-      h5
-        img(src='')
-        | Alex Lambert
-        p bio
-
-  h4.mt4.mb3 Join us
-  p we're growing
-  a(href='careers')
-    button.btn-cta See open positions
 include footer.pug

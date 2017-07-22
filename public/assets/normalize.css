@@ -6,14 +6,15 @@
  * 2. Prevent adjustments of font size after orientation changes in
  *    IE on Windows Phone and in iOS.
  */
-html { line-height: 1.15; /* 1 */ -ms-text-size-adjust: 100%; /* 2 */ -webkit-text-size-adjust: 100%; /* 2 */ }
+html { font-size: 1em; line-height: 1.45; /* 1 */ -ms-text-size-adjust: 100%; /* 2 */ -webkit-text-size-adjust: 100%; /* 2 */ }
 /* Sections
    ========================================================================== */
 /**
  * Remove the margin and padding in all browsers (opinionated).
  */
-body { margin: 0; padding: 0; }
-/**
+body { margin: 0; padding: 0; font-family: 'Yantramanav Roboto', sans-serif; font-weight: 300; color: #fff; opacity: .8; background-color: #222;
+ }
+/**body
  * Add the correct display in IE 9-.
  */
 article, aside, footer, header, nav, section { display: block; }
@@ -21,7 +22,28 @@ article, aside, footer, header, nav, section { display: block; }
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
  */
-h1 { font-size: 2em; margin: .67em 0; }
+h1 { font-size: 3.998em; margin: 1.414em 0 0.5em; }
+
+h1, h2, h3, h4, p, small {
+  max-width: 30em;
+}
+
+p {margin-bottom: 1.3em;}
+
+h1, h2, h3, h4 {
+  margin: 1.414em 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.2;
+}
+
+h2 {font-size: 2.827em;}
+
+h3 {font-size: 1.999em;}
+
+h4 {font-size: 1.414em;}
+
+small { font-size: 0.707em; }
+
 /* Grouping content
    ========================================================================== */
 /**
@@ -77,9 +99,6 @@ dfn { font-style: italic; }
  */
 mark { background-color: #ff0; color: #000; }
 /**
- * Add the correct font size in all browsers.
- */
-small { font-size: 80%; }
 /**
  * Prevent `sub` and `sup` elements from affecting the line height in
  * all browsers.
@@ -212,16 +231,8 @@ template { display: none; }
  * Add the correct display in IE 10-.
  */
 [hidden] { display: none; }
-/* Modules */
-/*
 
-  BOX SIZING
-
-*/
-html, body, div, article, section, main, footer, header, form, fieldset, legend,
-pre, code, a, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, textarea, table,
-td, th, tr, input[type="email"], input[type="number"], input[type="password"],
-input[type="tel"], input[type="text"], input[type="url"], .border-box { box-sizing: border-box; }
+/*BOX SIZING*/
 
 * {
   box-sizing: border-box;
@@ -232,5 +243,3 @@ input[type="tel"], input[type="text"], input[type="url"], .border-box { box-sizi
 *:after, {
   box-sizing: inherit;
 }
-
-/*
