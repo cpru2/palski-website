@@ -33,6 +33,10 @@ app.get('/updates', function(req, res) {
   res.render('updates');
 });
 
+app.get('/update', function(req, res) {
+  res.render('update');
+});
+
 app.get('/careers', function(req, res) {
   res.render('careers');
 });

@@ -1,9 +1,18 @@
-button(class= 'hamburger' 'hamburger--vortex' 'is-active', type='button')
-  span.hamburger-box
-    span.hamburger-inner
-nav(class='overlay', id='nav')
+nav.navbar
+  #nav-container
+    #palski
+      img(src='/static/assets/img/palski-logo.png')
+    #burger
+      img(src='/static/assets/img/burger.svg', onclick='openNav()')
+#myNav.overlay
+  .closebtn
+    img(src='/static/assets/img/cancel.svg', href='javascript:void(0)', onclick='closeNav()')
   .overlay-content
-      a(href='/') Home
-      a(href='careers') Careers
-      a(href='/#about') About
-      a(href='updates') Updates
+    h3
+      a(href='/careers') Careers
+    h3
+      a(onclick='closeNav()', href='/#services') Services
+    h3
+      a(href='/updates') Updates
+    h3
+      a(onclick='closeNav()', href='/#team') Team

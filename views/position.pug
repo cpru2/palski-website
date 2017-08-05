@@ -1,23 +1,30 @@
 include boilerplate.pug
-div
-  h1 Position 1
-  ul
-    li Location
-    li Contingent
-    li Full time
-div
-  h3 You are
-  p A pineapple with a big head and two feet who likes challenges
-  h3 You have
-  ul
-    li A hat
-    li Hulahooping ability
-    li 5 ears
-    li A degree in witchcraft
-  h3 You will
-  ul
-    li Make it rain money
-    li Eat like a king
-    li Learn the art of television commuting
-  include form.pug
-include footer.pug
+include nav.pug
+#main
+  #container
+    #title
+      #header
+        h2 Position 1
+        p
+          span Location | Full-time
+    #requirements
+      #requirements-container
+        #requirements-grid
+          #req
+            h3#blockquote You are
+            p A pineapple with a big head and two feet who likes challenges.
+          #req
+            h3#blockquote You have
+            p A hat
+            p Hulahooping ability
+            p 5 ears
+            p A degree in witchcraft
+          #req
+            h3#blockquote You will
+            p Make it rain money
+            p Eat like a king
+            p Learn the art of television commuting
+    #joinus
+      #form-container
+        h3 Apply for this position
+        include form.pug

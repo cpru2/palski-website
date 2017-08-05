@@ -1,18 +1,16 @@
 include boilerplate.pug
 #hero
+  include nav.pug
   #hero-body
-    #hero-item
-      h1 Satellite Systems Engineering
-    #hero-item.mb2
-      p Aerospace engineering firm focused on growing the next generation of engineering and management leaders.
-    #hero-item
-      a(href='careers')
-        button.btn-cta See open positions
+    h1 Satellite Systems Engineering
+    p Aerospace engineering firm focused on growing the next generation of engineering and management leaders.
+    a(href='/careers#openings')
+      button.btn-cta See openings
 #main
   #container
     #services
       #header
-        h4#item Why Palski?
+        p Why Palski?
       #service-grid
         #service
           i.icon-cubes#icon
@@ -33,66 +31,66 @@ include boilerplate.pug
             | modeling complex systems to architect, predict, and verify performance.
     #milestones
       #manifest
-        h4#header Manifest
-        #milestone-grid.mt4
-          #date
-            small.fw6 April 2014
-          #milestone
-            p
-              | We launched!
-        #milestone-grid
-          #date
-            small.fw6 December 2014
-          #milestone
-            p Won first contract from CEB Metasystems
-        #milestone-grid
-          #date
-            small.fw6 April 2016
-          #milestone
-            p Launched summer internship program with USC
-        #milestone-grid
-          #date
-            small.fw6 February 2017
-          #milestone
-            p Awarded DARPA contract
-        #milestone-grid
-          #date
-            small.fw6 April 2017
-          #milestone
-            p New location in Colorado!
+        #header
+          p Manifest
+        #milestone-container
+          #milestone-grid
+            #date
+              small.fw6 April 2014
+            #milestone
+              p
+                | We launched!
+          #milestone-grid
+            #date
+              small.fw6 December 2014
+            #milestone
+              p Won first contract from CEB Metasystems
+          #milestone-grid
+            #date
+              small.fw6 April 2016
+            #milestone
+              p Launched summer internship program with USC
+          #milestone-grid
+            #date
+              small.fw6 February 2017
+            #milestone
+              p Awarded DARPA contract
+          #milestone-grid
+            #date
+              small.fw6 April 2017
+            #milestone
+              p New location in Colorado!
     #testimonials
       #header
-        h4#item What people say:
+        p What people say:
       #testimonial-grid
         #logo
           img(src='/static/assets/img/boeing-logo.png')
         #testimonial
           h3#blockquote "When I want something done right I ask for a Palski."
           small
-            span.fw6 Archie Bunker
-            span Space Control Engineer at Boeing
+            span.fw6.db Archie Bunker
+            span.db Space Control Engineer at Boeing
       #testimonial-grid
         #logo
           img(src='/static/assets/img/boeing-logo.png')
         #testimonial
           h3#blockquote "The Palski's are the best. We love going sailing with them."
           small
-            span.fw6 Harry Hart
-            span Lieutenant Colonel at Boeing
+            span.fw6.db Harry Hart
+            span.db Lieutenant Colonel at Boeing
       #testimonial-grid
         #logo
           img(src='/static/assets/img/boeing-logo.png')
         #testimonial
           h3#blockquote "I do planes. The Palski's do satellites."
           small
-            span.fw6 Amelia Earheart
-            span First female pilot at Boeing
+            span.fw6.db Amelia Earheart
+            span.db First female pilot at Boeing
     #team
       #header
-        h4#item All we want is missions that succeed, and cost less.
-      #description
-        p#item
-          | We are a small team of engineers who like to solve complex problems.
+        h3 All we want is successful missions that cost less.
+        p We are a small team of engineers who like to solve complex problems.
       #team-grid
         #member
           .aspect-ratio--1x1
@@ -120,7 +118,7 @@ include boilerplate.pug
           p.fw4 Alex Lambert
           p bio
     #joinus
-      a(href='careers')
-        button.btn-cta See open positions
+      a(href='/careers#openings')
+        button.btn-cta See openings
 
 include footer.pug

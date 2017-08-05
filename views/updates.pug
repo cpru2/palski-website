@@ -1,28 +1,29 @@
 include boilerplate.pug
-div
-  h1 Updates
-  // eventually a way to have people subscribe to post updates
-  h4 News, awards, contracts, and partnerships
-div
-  img(src='')
-  h4 Headline
-  p date
-  p description
-  a(href='') Read More
-  // icon that expands into full article
-  img(src='')
-  h4 Headline
-  p date
-  p description
-  a(href='') Read More
-  img(src='')
-  h4 Headline
-  p date
-  p description
-  a(href='') Read More
-  img(src='')
-  h4 Headline
-  p date
-  p description
-  a(href='') Read More
+include nav.pug
+#main
+  #container
+    #updates
+      #bar-container
+        #bar
+          h2 Updates
+          p News, awards, contracts, and partnerships
+      #article-grid
+        #article
+          a(href='update')
+            img(src='/static/assets/img/bird.jpg', id='article-image')
+          h3 Headline
+          small date
+          p description
+        #article
+          a(href='update')
+            img(src='/static/assets/img/bird.jpg', id='article-image')
+          h3 Headline
+          small date
+          p description
+        #article
+          a(href='update')
+            img(src='/static/assets/img/bird.jpg', id='article-image')
+          h3 Headline
+          small date
+          p description
 include footer.pug

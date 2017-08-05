@@ -12,7 +12,7 @@ html { font-size: 1em; line-height: 1.45; /* 1 */ -ms-text-size-adjust: 100%; /*
 /**
  * Remove the margin and padding in all browsers (opinionated).
  */
-body { margin: 0; padding: 0; font-family: 'Yantramanav Roboto', sans-serif; font-weight: 300; color: #fff; opacity: .8; background-color: #222;
+body { margin: 0; padding: 0; font-family: 'Yantramanav Roboto', sans-serif; font-weight: 300; color: #000; opacity: .8; background-color: #222;
  }
 /**body
  * Add the correct display in IE 9-.

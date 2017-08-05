@@ -1,68 +1,65 @@
 include boilerplate.pug
+include nav.pug
 .swiper-container
   .swiper-wrapper
-    .swiper-slide.image.is-2by1
+    .swiper-slide
       img(src='/static/assets/img/placeholderbackground.jpg')
-    .swiper-slide.image.is-2by1
+    .swiper-slide
       img(src='/static/assets/img/placeholderbackground.jpg')
-    .swiper-slide.image.is-2by1
+    .swiper-slide
       img(src='/static/assets/img/placeholderbackground.jpg')
-    .swiper-slide.image.is-2by1
+    .swiper-slide
       img(src='/static/assets/img/placeholderbackground.jpg')
   .swiper-button-prev
   .swiper-button-next
-div.has-text-centered.pt2
-  div.tracked-ns
-    h1.f3.f2-ns.f1-xl.fw2.lato.lh-title Careers
-    h4.measure.center.lh-copy.f5.f4-ns.f3-xl.fw1.roboto
-      | We look for skilled engineers who are excited to solve technical problems
-      | and develop leadership skills.
-  div.pt4
-  h3 Open positions
-  ul
-    li
-      a(href='position') Position 1
-    ul
-      li Location
-      li Contingent
-      li Full time
-    li
-      a(href='position') Position 2
-    ul
-      li Location
-      li Contingent
-      li Full time
-    li
-      a(href='position') Position 3
-    ul
-      li Location
-      li Contingent
-      li Full time
+#main
+  #container
+    #title
+      #header
+        #item
+          h1 Careers
+        #item
+          p
+          | We look for technical people in the satellite mission engineering
+          | field who have a bias for action and a track record of accomplishments.
+    #openings
+      #header
+        #item
+          h2 Openings
+      #position
+        a(href='position')
+          h4 Position 1
+        small
+          span Location | Full-time
+      #position
+        a(href='position')
+          h4 Position 1
+        small
+          span Location | Full-time
+      #position
+        a(href='position')
+          h4 Position 1
+        small
+          span Location | Full-time
+    #ourvalues
+      #header
+        #item
+          h3 Our values
+      #paragraph
+        p
+          | We are results-oriented problem solvers who are excited by complex challenges
+          | and can provide well-executed technical analysis to guide our decision-making.
+        p
+          | We work as a team, and expect members to step up and lead, when necessary.
+          | Most importantly, we are internally motivated by our willingness to learn and grow.
+    #dontsee
+      #header
+        h3 Don't see anything that fits?
+        p We'll email you when relevant opportunities open up
+      form(method="post", action="/form", id="form")
+        input(name="name", type="text", id="ourid", placeholder="Name", required)
+        input(name="email", type="text", id="ourid", placeholder="Email", required)
+        input(name="role", type="text", id="ourid", placeholder="Role desired", required)
+        input(type="submit", value="Send", class='btn-cta')
 
-  div.columns.has-text-centered
-  div.column
-    h5
-      | Mike Palski
-      img(src='')
-    p bio
-  div.column
-    h5
-      | Kathryn Palski
-      img(src='')
-    p bio
-  div.column
-    h5
-      | Andrew Palski
-      img(src='')
-    p bio
-  div.column
-    h5
-      | David Kalian
-      img(src='')
-    p bio
-  div.column
-    h5
-      | Alex Lambert
-      img(src='')
-    p bio
 include footer.pug
