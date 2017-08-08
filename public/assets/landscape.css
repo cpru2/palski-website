@@ -1,0 +1,47 @@
+@media screen and (max-height: 450px) {
+
+  html {
+    font-size: .707em;
+  }
+
+  /*nav*/
+
+  .overlay a {
+    font-size: 20px;
+    padding: 0vw;
+  }
+
+  .overlay .closebtn {
+    font-size: 2em;
+    top: 3vw;
+    right: 3vw;
+  }
+
+  /*section*/
+
+  #nav-container {
+    padding: 3vw 2vw;
+  }
+
+  /*updates*/
+
+  #updates {
+    padding: 0vw;
+  }
+
+  #article-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 100%;
+  }
+
+  #article {
+    margin-top: 3em;
+    text-align: left;
+    flex: 1;
+    max-width: 100%;
+  }
+
+
+}

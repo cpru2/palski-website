@@ -12,7 +12,7 @@ var scrollTimeOut = true,
         yPos = $(window).scrollTop();
 
         if(Math.abs(lastYPos - yPos) >= yPosDelta) {
-            if (yPos > lastYPos && yPos > navHeight){
+            if (yPos > lastYPos && yPos > navHeight) {
                 nav.addClass('hide-nav');
             } else {
                 nav.removeClass('hide-nav');
@@ -31,6 +31,7 @@ setInterval(function() {
     }
 
 }, 250);
+
 
 /*mobile nav */
 

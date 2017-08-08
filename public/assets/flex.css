@@ -41,13 +41,12 @@ body {
     transform: translateY(-100%);
 }
 
-
 #nav-container {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-  padding: 2rem 2rem 2rem 2rem;
+  padding: 3vw;
 }
 
 #burger {
@@ -106,19 +105,9 @@ body {
   max-width: 2rem;
 }
 
-@media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-    font-size: 2em;
-    top: 3vw;
-    right: 3vw;
-  }
-
-}
-
 #hero {
   height: 100vh;
-  background-color: black;
+  background-color: red;
   display: flex;
   justify-content: center;
   align-items: center;
