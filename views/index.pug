@@ -1,7 +1,7 @@
 include boilerplate.pug
 include nav.pug
-#hero
-  #hero-body
+.hero
+  .hero-body
     h1 Satellite Systems Engineering
     p Aerospace engineering firm focused on growing the next generation of engineering and management leaders.
     a(href='/careers#openings')
@@ -65,7 +65,7 @@ include nav.pug
         p What people say:
       #testimonial-grid
         #logo
-          img(src='/static/assets/img/boeing-logo.png')
+          img(src='/static/assets/img/boeing-logo.png', class='logo')
         #testimonial
           h3#blockquote "When I want something done right I ask for a Palski."
           small
@@ -73,7 +73,7 @@ include nav.pug
             span.db Space Control Engineer at Boeing
       #testimonial-grid
         #logo
-          img(src='/static/assets/img/boeing-logo.png')
+          img(src='/static/assets/img/boeing-logo.png', class='logo')
         #testimonial
           h3#blockquote "The Palski's are the best. We love going sailing with them."
           small
@@ -81,7 +81,7 @@ include nav.pug
             span.db Lieutenant Colonel at Boeing
       #testimonial-grid
         #logo
-          img(src='/static/assets/img/boeing-logo.png')
+          img(src='/static/assets/img/boeing-logo.png', class='logo')
         #testimonial
           h3#blockquote "I do planes. The Palski's do satellites."
           small

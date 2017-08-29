@@ -2,28 +2,14 @@ include boilerplate.pug
 include nav.pug
 #main
   #container
-    #updates
-      #bar-container
-        #bar
-          h2 Updates
-          p News, awards, contracts, and partnerships
-      #article-grid
-        #article
-          a(href='update')
-            img(src='/static/assets/img/bird.jpg', id='article-image')
-          h3 Headline
-          small date
+    .hero#blog
+      .hero-body
+        a(href='update')
+          h2 Headline
           p description
-        #article
-          a(href='update')
-            img(src='/static/assets/img/bird.jpg', id='article-image')
-          h3 Headline
-          small date
-          p description
-        #article
-          a(href='update')
-            img(src='/static/assets/img/bird.jpg', id='article-image')
-          h3 Headline
-          small date
-          p description
+    #joinus
+      form(method="post", action="/form", id='form')
+        h4
+          input(name="email", type="text", id="ourid", placeholder="get updates via email", required)
+        input(type="submit" value="subscribe" class="btn-cta")
 include footer.pug

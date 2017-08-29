@@ -1,10 +1,10 @@
 
 // Show header on scroll up
-
+/*
 var scrollTimeOut = true,
     lastYPos = 0,
     yPos = 0,
-    yPosDelta = 5,
+    yPosDelta = 1,
     nav = $('nav.navbar'),
     navHeight = nav.outerHeight(),
     setNavClass = function() {
@@ -32,7 +32,7 @@ setInterval(function() {
 
 }, 250);
 
-
+*/
 /*mobile nav */
 
 function openNav() {
