@@ -11,18 +11,18 @@ app.post('/form', urlencodedParser, function(req, res, next){
   console.log(req.body);
   var mailer = {
     service: 'Go Daddy',
-    host: 'smtpout.secureserver.net',
-    port: 3535,
+    host: 'xxx.xxx.net',
+    port: ####,
     secure: false,
     auth: {
-      user: 'hiring@palski.com',
-      pass: 'bigbrother',
+      user: 'example@example.com',
+      pass: 'sadjasdjkash',
     }
   };
 
   var mailOptions = {
     from: req.body.email,
-    to: 'hiring@palski.com',
+    to: 'example@example.com',
     subject: 'New applicant',
     text: req.body.message,
     attachments: [
